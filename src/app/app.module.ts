@@ -25,6 +25,7 @@ import { AuthComponent }   from './auth/auth.component';
 import { MenuToggleModule } from './core/menu/menu-toggle.module';
 import { MenuItems } from './core/menu/menu-items/menu-items';
 import { PageTitleService } from './core/page-title/page-title.service';
+import {ChartComponent} from './chart/chart.component';
 
 export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, 'assets/i18n', '.json');
@@ -55,9 +56,10 @@ const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
 		}),
 	],
 	declarations: [
-		ChankyaAppComponent, 
+		ChankyaAppComponent,
 		MainComponent,
 		AuthComponent,
+    ChartComponent
 	],
 	entryComponents: [
 	],
