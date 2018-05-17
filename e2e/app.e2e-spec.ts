@@ -1,13 +1,14 @@
-import { PrimerPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('primer App', function() {
-  let page: PrimerPage;
+describe('pro-chart App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new PrimerPage();
+    page = new AppPage();
   });
 
-  it('should expect true to be true', () => {
-    expect(true).toBe(true);
+  it('should display welcome message', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
