@@ -3,18 +3,18 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { ChatComponent } from './chat.component';
-import { ChatRoutes } from './chat.routing';
+import { ChartComponent } from './chart.component';
+import { ChartRoutes } from './chart.routing';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule.forChild(ChatRoutes)
+    RouterModule.forChild(ChartRoutes)
   ],
-  declarations: [ 
-    ChatComponent
+  declarations: [
+    ChartComponent
   ]
 })
 
-export class ChatModule {}
+export class ChartModule {}

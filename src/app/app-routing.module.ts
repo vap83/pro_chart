@@ -17,9 +17,11 @@ export const AppRoutes: Routes = [{
   },{
     path: 'pages',
     loadChildren: './blank/blank.module#BlankModule'
+  },{
+    path: 'chart',
+    loadChildren: './chart/chart.module#ChartModule'
   }],
-},
-{
+},{
   path: '',
   component: AuthComponent,
   children: [{

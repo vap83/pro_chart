@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 
-import { ChatComponent } from './chat.component';
+import { ChartComponent } from './chart.component';
 
-export const ChatRoutes: Routes = [{
+export const ChartRoutes: Routes = [{
   path: '',
-  component: ChatComponent
+  component: ChartComponent
 }];
